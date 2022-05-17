@@ -1,9 +1,9 @@
 Algorithm Sentence_determine
 var
-    ch= string;
-    countNbcar = integer :=0;
-    countNbvoy= integer:=0;
-    CountNbwords = integer:=0;
+    ch: string;
+    countNbcar : integer :=0;
+    countNbvoy: integer:=0;
+    CountNbwords : integer:=0;
 Begin
     
 read(ch)
@@ -31,7 +31,7 @@ WHILE (ch[i] <> ".") DO
     i:= i+1;
 END_WHILE
 countNbcar := countNbcar+1;
-IF (ch[i] = ".") THEN
+IF (ch[i-1] = " ") THEN
     countNbWords =countNbWords+1;
 END_IF
 
